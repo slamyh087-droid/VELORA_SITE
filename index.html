@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08090c">
+  <meta name="description" content="VELORA — استودیو دیجیتال برای طراحی، برنامه‌نویسی و ساخت تجربه‌های وب مدرن.">
+  <meta name="keywords" content="VELORA, طراحی سایت, برنامه نویسی, توسعه وب, Python, JavaScript">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="VELORA">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VELORA — Digital Lab">
+  <meta property="og:description" content="VELORA — طراحی، برنامه‌نویسی و ساخت تجربه‌های وب مدرن و تعاملی.">
+  <meta property="og:url" content="https://amirqq.vercel.app/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://amirqq.vercel.app/">
+  <title>VELORA — Digital Lab</title>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"VELORA",
+    "url":"https://amirqq.vercel.app/",
+    "description":"VELORA — استودیو دیجیتال برای طراحی، برنامه‌نویسی و ساخت تجربه‌های وب مدرن."
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-loading">
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="velora-loader" id="veloraLoader" aria-hidden="true">
+    <div class="loader-field"><div class="loader-ring ring-a"></div><div class="loader-ring ring-b"></div><div class="loader-ring ring-c"></div><div class="loader-energy-v">V</div><div class="loader-core"></div></div>
+    <div class="loader-brand">VELORA</div>
+    <div class="loader-progress-wrap"><span>INITIALIZING DIGITAL LAB</span><div class="loader-progress"><i id="loaderProgress"></i></div></div>
+  </div>
+  <div class="noise"></div><div class="cursor-glow" aria-hidden="true"></div>
+
+  <div class="velora-ambient" aria-label="کنترل موسیقی پس‌زمینه">
+    <button class="ambient-sun-btn" id="ambientSun" type="button" aria-label="کم و زیاد کردن صدای موسیقی با چرخاندن خورشید" aria-valuemin="0" aria-valuemax="100" aria-valuenow="18">
+      <svg class="ambient-sun" viewBox="0 0 120 120" aria-hidden="true"><g class="sun-rays">
+      <path d="M60 7 L62 25"/><path d="M83 12 L75 28"/><path d="M103 29 L87 39"/><path d="M112 57 L94 59"/><path d="M105 84 L88 76"/><path d="M82 105 L73 89"/><path d="M57 113 L59 95"/><path d="M33 106 L43 89"/><path d="M14 85 L30 76"/><path d="M8 58 L26 59"/><path d="M15 31 L32 40"/><path d="M35 13 L44 29"/>
+    </g><g class="sun-core"><circle cx="60" cy="60" r="10"/><circle cx="60" cy="60" r="16"/></g></svg>
+    </button>
+    <button class="ambient-toggle" id="ambientToggle" type="button" aria-label="فعال کردن صدا" aria-pressed="false"><span class="sound-on">♪</span><span class="sound-off">×</span></button>
+    <audio id="veloraAmbientAudio" src="./background-music.mp3" loop preload="auto" playsinline></audio>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top"><span class="brand-dot"></span>VELORA</a>
+    <nav class="nav-links" aria-label="ناوبری اصلی">
+      <a href="#features">امکانات</a><a href="#showcase">استودیو</a><a href="#team">تیم</a><a href="#stack">دوره اموزشی</a><a href="#faq">سؤالات</a>
+    </nav>
+    <div class="header-actions"><a class="login-link" href="login.html">ورود</a><a class="header-btn" href="signup.html">شروع پروژه <span>↗</span></a></div>
+    <button class="menu-btn" aria-label="باز کردن منو">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="hero">
+      <div class="hero-orb orb-a"></div><div class="hero-orb orb-b"></div><div class="hero-grid"></div>
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span> DIGITAL LAB / DESIGN · CODE · CREATE</div>
+        <h1>ایده‌ات رو تبدیل کن به چیزی که <em>فراموش نمی‌شه</em></h1>
+        <p>VELORA یک فضای دیجیتال برای ساخت تجربه‌های سریع، متفاوت و چشم‌گیر است؛ از طراحی رابط تا کدنویسی و محصول نهایی.</p>
+        <div class="hero-buttons"><a class="primary-btn magnetic" href="#features">کشف VELORA <span>↓</span></a><a class="ghost-btn magnetic" href="#team">تیم ما <span>↗</span></a></div>
+        <div class="mini-stats"><div><strong data-count="24">0/7</strong><span>دسترسی</span></div><div><strong data-count="100">0%</strong><span>واکنش‌گرا</span></div><div><strong>∞</strong><span>ایده</span></div></div>
+      </div>
+      <div class="hero-card-wrap reveal delay-2">
+        <div class="hero-card tilt-card">
+          <div class="card-top"><span class="status-dot"></span><span>VELORA / CORE</span><span class="dots">•••</span></div>
+          <div class="terminal-head"><span>~/velora</span><span class="live-pill">LIVE</span></div>
+          <div class="code-window">
+            <div><span class="purple">const</span> <span class="cyan">vision</span> = <span class="green">"your next idea"</span>;</div>
+            <div><span class="purple">function</span> <span class="blue">build</span>(vision) {</div>
+            <div class="indent"><span class="purple">return</span> <span class="yellow">beautiful</span> + <span class="yellow">fast</span>;</div><div>}</div>
+            <div class="terminal-cursor">▊</div>
+          </div>
+          <div class="floating-chip chip-one">✦ Smooth UI</div><div class="floating-chip chip-two">⚡ Fast</div><div class="floating-chip chip-three">◈ AI Ready</div>
+          <div class="radar"><span></span><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee"><div class="marquee-track"><span>DESIGN</span><b>✦</b><span>CODE</span><b>✦</b><span>CREATE</span><b>✦</b><span>BUILD</span><b>✦</b><span>AI</span><b>✦</b><span>DESIGN</span><b>✦</b><span>CODE</span><b>✦</b><span>CREATE</span><b>✦</b><span>BUILD</span><b>✦</b></div></section>
+
+<section class="ultra-signal section" id="experience">
+  <div class="signal-backdrop"><canvas id="veloraParticles"></canvas><div class="signal-grid"></div><div class="signal-scan"></div></div>
+  <div class="section-heading reveal signal-heading"><span class="section-kicker">08 / EXPERIENCE ENGINE</span><h2>این فقط یک سایت نیست <span>یک تجربه‌ست</span></h2><p>هر حرکت، نور و جزئیات اینجا برای زنده‌تر شدن VELORA طراحی شده.</p></div>
+  <div class="experience-grid">
+    <article class="experience-card holo-card reveal"><div class="exp-icon">✦</div><span class="exp-tag">01 / MOTION</span><h3>Motion System</h3><p>حرکت‌های نرم، عمق، پارالاکس و واکنش به اسکرول؛ صفحه با تو حرکت می‌کند.</p><div class="exp-meter"><i style="width:92%"></i></div><small>92% ACTIVE</small></article>
+    <article class="experience-card holo-card reveal delay-1"><div class="exp-icon">◉</div><span class="exp-tag">02 / DEPTH</span><h3>Holographic UI</h3><p>کارت‌هایی با نور محیطی و انعکاس که با حرکت موس شخصیتشان عوض می‌شود.</p><div class="mini-orb"></div><small>DEPTH ONLINE</small></article>
+    <article class="experience-card holo-card reveal delay-2"><div class="exp-icon">⌁</div><span class="exp-tag">03 / SIGNAL</span><h3>Live Signal</h3><p>یک لایه بصری زنده از ذرات و خطوط که فضای سایت را همیشه در حال حرکت نگه می‌دارد.</p><div class="signal-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>LIVE / 24·7</small></article>
+  </div>
+</section>
+
+<section class="section command-section">
+  <div class="command-shell reveal">
+    <div class="command-top"><span><i></i> VELORA TERMINAL</span><b>INTERACTIVE / 01</b></div>
+    <div class="command-body"><div class="command-code"><p><span class="c-purple">$</span> boot <span class="c-cyan">velora</span> --mode=<span class="c-green">ultra</span></p><p><span class="c-muted">[01]</span> loading visual engine <em>done</em></p><p><span class="c-muted">[02]</span> syncing motion layers <em>done</em></p><p><span class="c-muted">[03]</span> calibrating experience <em>done</em></p><p><span class="c-purple">$</span> <span class="type-line">create something unforgettable<span class="caret">▌</span></span></p></div><div class="command-orb"><span>V</span><i></i><b></b></div></div>
+  </div>
+</section>
+
+<section class="section vision-section">
+  <div class="vision-copy reveal"><span class="section-kicker">09 / VISION</span><h2>جزئیات کوچک <span>اثر بزرگ</span></h2><p>از فاصله یک پیکسل تا ریتم انیمیشن‌ها؛ VELORA قرار نیست شبیه یک قالب آماده باشد.</p><div class="vision-list"><div><b>01</b><span>Visual identity</span><small>هویت بصری اختصاصی</small></div><div><b>02</b><span>Interactive depth</span><small>عمق و تعامل واقعی</small></div><div><b>03</b><span>Performance first</span><small>سرعت بدون قربانی کردن ظاهر</small></div></div></div>
+  <div class="vision-stage reveal delay-1"><div class="stage-ring r1"></div><div class="stage-ring r2"></div><div class="stage-ring r3"></div><div class="stage-core"><span>V</span><small>VELORA</small></div><div class="stage-particle p1"></div><div class="stage-particle p2"></div><div class="stage-particle p3"></div></div>
+</section>
+
+<section class="section ultra-quote reveal"><div class="quote-line"></div><span>“</span><h2>بهترین تیم برنامه نویسی<br><em>در نیشابور</em></h2><div class="quote-meta">VELORA / DIGITAL LAB / 2026</div></section>
+
+    <section class="section" id="features">
+      <div class="section-heading reveal"><span class="section-kicker">01 / CORE</span><h2>طراحی بسیار خفن <span>وبسایت برای شما</span></h2><p>هر بخش VELORA برای یک دلیل ساخته شده: تجربه بهتر، سرعت بیشتر و ظاهر ماندگار.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card reveal"><div class="icon-box">✦</div><h3>طراحی سینمایی</h3><p>نور، عمق، گرادینت و حرکت‌های ظریف که بدون شلوغ‌کاری حس یک محصول واقعی می‌دهند.</p><span class="card-number">01</span></article>
+        <article class="feature-card reveal delay-1"><div class="icon-box">⌁</div><h3>Micro Interaction</h3><p>Hover، حرکت موس، اسکرول و بازخوردهای ریز برای اینکه سایت زنده به نظر برسد.</p><span class="card-number">02</span></article>
+        <article class="feature-card reveal delay-2"><div class="icon-box">◈</div><h3>Ultra Responsive</h3><p>چیدمان از موبایل تا دسکتاپ خودش را با صفحه وفق می‌دهد؛ بدون اسکرول افقی اعصاب‌خردکن.</p><span class="card-number">03</span></article>
+        <article class="feature-card reveal delay-3"><div class="icon-box">↗</div><h3>Ready to Ship</h3><p>ساختار سبک و استاتیک؛ آماده انتشار روی Vercel و قابل توسعه برای قابلیت‌های آینده.</p><span class="card-number">04</span></article>
+      </div>
+    </section>
+
+    <section class="section showcase" id="showcase">
+      <div class="showcase-image reveal"><div class="abstract-art"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-circle"></div><div class="art-square"></div><div class="art-line"></div><span>VELORA<br>DEVELOPER</span><small>VELORA / 001</small></div></div>
+      <div class="showcase-copy reveal"><span class="section-kicker">02 / STUDIO</span><h2>ساختن چیزهایی که <span>فقط سایت نیستند</span></h2><p>ما دنبال اینیم که هر صفحه شخصیت خودش را داشته باشد؛ از اولین فریم تا آخرین کلیک.</p><div class="bullet-list"><div><b>01</b><span>UI با شخصیت و هویت بصری</span></div><div><b>02</b><span>کدنویسی تمیز و قابل توسعه</span></div><div><b>03</b><span>تجربه سریع، واکنش‌گرا و روان</span></div></div><div class="mini-code"><span>status</span><b>BUILDING SOMETHING COOL...</b><i></i></div></div>
+    </section>
+
+    <section class="section numbers-section">
+      <div class="numbers-grid">
+        <div class="big-number reveal"><strong>01</strong><span>ایده</span><p>هر پروژه از یک جرقه شروع می‌شود.</p></div>
+        <div class="big-number reveal delay-1"><strong>02</strong><span>طراحی</span><p>ظاهر قبل از کد، تجربه را شکل می‌دهد.</p></div>
+        <div class="big-number reveal delay-2"><strong>03</strong><span>کدنویسی</span><p>ایده را به چیزی واقعی تبدیل می‌کنیم.</p></div>
+        <div class="big-number reveal delay-3"><strong>04</strong><span>لانچ</span><p>آخرش باید واقعاً کار کند؛ همین!</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="team">
+      <div class="section-heading reveal"><span class="section-kicker">03 / TEAM</span><h2>چهار نفر، <span>یک داستان</span></h2><p>آدم‌هایی که پشت VELORA ایستاده‌اند.</p></div>
+      <div class="team-grid">
+        <article class="person-card reveal"><div class="person-photo"><img src="./amages/file_00000000f1c881f5a5d5765c7d378904.png" alt="حسین سلامی"><span>01</span></div><div class="person-info"><h3>حسین سلامی</h3><p>Creative Developer</p><small>حسین سلامی یک برنامه‌نویس خلاق و پرانرژی که عاشق ساختن پروژه‌های متفاوت و جذاب است. با ترکیب مهارت، ایده‌پردازی و پشتکار، تلاش می‌کند هر پروژه را به چیزی خاص و حرفه‌ای تبدیل کند.</small><a href="rubika://l.rubika.ir/@HOSSEIN_SALAMI_1390">مشاهده پروفایل ↗</a></div></article>
+        <article class="person-card reveal delay-1"><div class="person-photo"><img src="./amages/d9290081650be42d78fda3208fc97b8f.jpg" alt="امیر محمد سلامی"><span>02</span></div><div class="person-info"><h3>امیر محمد سلامی</h3><p>UI / UX Designer</p><small>امیر محمد سلامی متخصص ساخت تجربه‌های متفاوت و مدرن در دنیای برنامه‌نویسی. عاشق چالش‌های سخت، ایده‌های جدید و پروژه‌هایی که از نمونه‌های معمولی یک قدم جلوتر باشند.</small><a href="rubika://l.rubika.ir/@AMIRcr7_FH">مشاهده پروفایل ↗</a></div></article>
+        <article class="person-card reveal delay-2"><div class="person-photo"><img src="./amages/7a7a55709b26f9108403dde64d85e603.jpg" alt="محمد بذرپاش"><span>03</span></div><div class="person-info"><h3>محمد بذرپاش</h3><p>Backend Developer</p><small>محمد بذرپاش برنامه‌نویسی با ذهنی تحلیلی و نگاه حل‌مسئله. از پیدا کردن باگ‌های پیچیده تا ساخت قابلیت‌های جدید، هدفش یک چیز است: تبدیل یک ایده خام به یک محصول واقعی و قدرتمند.</small><a href="rubika://l.rubika.ir/@Zoooooooooooz">مشاهده پروفایل ↗</a></div></article>
+        <article class="person-card reveal delay-3"><div class="person-photo"><img src="./amages/images (2).png" alt="مهدی بذرپاش"><span>04</span></div><div class="person-info"><h3>مهدی بذرپاش</h3><p>Project Lead</p><small>مهدی بذرپاش یک برنامه‌نویس خلاق و آینده‌نگر که ایده‌های تازه را به پروژه‌هایی مدرن و قدرتمند تبدیل می‌کند و همیشه دنبال ساختن چیزهای متفاوت است.</small><a href="rubika://l.rubika.ir/@MahdiBazrpash">مشاهده پروفایل ↗</a></div></article>
+      </div>
+    </section>
+
+    <section class="section stack-section" id="stack">
+      <div class="section-heading reveal"><span class="section-kicker">04 / STACK</span><h2>برخی از دوره های اموزشی <span>ما</span></h2><p>آموزش  زبان های برنامه نویسی مختلف</p></div>
+      <div class="language-grid">
+        <article class="lang-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python"><div><h3>Python</h3><p>AI، اتوماسیون و بک‌اند.</p></div></article>
+        <article class="lang-card reveal delay-1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"><div><h3>JavaScript</h3><p>تعامل و تجربه‌های زنده وب.</p></div></article>
+        <article class="lang-card reveal delay-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript"><div><h3>TypeScript</h3><p>پروژه‌های بزرگ‌تر، کد مطمئن‌تر.</p></div></article>
+        <article class="lang-card reveal delay-3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML"><div><h3>HTML</h3><p>ساختار و معنای وب.</p></div></article>
+        <article class="lang-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS"><div><h3>CSS</h3><p>ظاهر، حرکت و ریسپانسیو.</p></div></article>
+        <article class="lang-card reveal delay-1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java"><div><h3>Java</h3><p>اپلیکیشن و سیستم‌های قدرتمند.</p></div></article>
+        <article class="lang-card reveal delay-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++"><div><h3>C++</h3><p>سرعت و کنترل عمیق سیستم.</p></div></article>
+        <article class="lang-card reveal delay-3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#"><div><h3>C#</h3><p>.NET و توسعه بازی.</p></div></article>
+        <article class="lang-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP"><div><h3>PHP</h3><p>توسعه وب سمت سرور.</p></div></article>
+        <article class="lang-card reveal delay-1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" alt="Go"><div><h3>Go</h3><p>سرویس‌های سریع و سبک.</p></div></article>
+        <article class="lang-card reveal delay-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" alt="Rust"><div><h3>Rust</h3><p>کارایی بالا و ایمنی حافظه.</p></div></article>
+        <article class="lang-card reveal delay-3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg" alt="Swift"><div><h3>Swift</h3><p>توسعه مدرن اپل.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section process-section">
+      <div class="section-heading reveal"><span class="section-kicker">05 / PROCESS</span><h2>شاید بگی<span> فرق ما با بقیه چیه؟🤔</span></h2></div>
+      <div class="process-track">
+        <div class="process-line"></div><article class="process-step reveal"><span>01</span><h3>Discover</h3><p>ایده، هدف و حس پروژه را مشخص می‌کنیم.</p></article><article class="process-step reveal delay-1"><span>02</span><h3>Design</h3><p>هویت بصری و تجربه کاربری را می‌سازیم.</p></article><article class="process-step reveal delay-2"><span>03</span><h3>Build</h3><p>کد می‌زنیم، تست می‌کنیم و جزئیات را صیقل می‌دهیم.</p></article><article class="process-step reveal delay-3"><span>04</span><h3>Launch</h3><p>پروژه را آماده انتشار و رشد می‌کنیم.</p></article>
+      </div>
+    </section>
+
+    <section class="section promo reveal">
+      <div><span class="section-kicker">06 / LET'S BUILD</span><h2>بگو ببینم دلت می‌خواد <span>چی بسازیم؟</span> 😉</h2><p>ایده خامت رو بده؛ تبدیلش می‌کنیم به چیزی که بشه با افتخار نشونش داد.</p></div>
+      <a class="promo-btn magnetic" href="https://en.wikipedia.org/wiki/Donkey" target="_blank" rel="noopener">خرید<span>↗</span></a>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="section-heading reveal"><span class="section-kicker">07 / FAQ</span><h2>سوال داری <span>احتمالاً اینجاست</span></h2></div>
+      <div class="faq-list">
+        <details class="faq-item reveal"><summary><span>قیمت خرید یک سایت چقدر است؟</span><b>+</b></summary><p>طراحی یک سایت معمولی با پشتیبانی ۱ ساله ۴۰۰ میلیون ریال است.</p></details>
+        <details class="faq-item reveal"><summary><span>راه ارتباط با ما چیست؟</span><b>+</b></summary><p>می‌تونی از راه‌های ارتباطی پایین سایت با ما در تماس باشی.</p></details>
+        <details class="faq-item reveal"><summary><span>مدت زمان تحویل سایت چقدر است؟</span><b>+</b></summary><p>در کمتر از 24 ساعت😏</p></details>
+        <details class="faq-item reveal"><summary><span>شرایط دوره‌های آموزشی چطور است؟</span><b>+</b></summary><p>برای هر دوره ۱۵ ساعت آموزش داریم و جزئیات هر دوره هنگام ثبت‌نام اعلام می‌شود.</p></details>
+        <details class="faq-item reveal"><summary><span>مدرس‌های دوره آموزشی کیان؟</span><b>+</b></summary><p>امیر محمد سلامی، حسین سلامی و محمد بذرپاش.</p></details>
+        <details class="faq-item reveal"><summary><span>آیا امکان شخصی‌سازی کامل سایت وجود دارد؟</span><b>+</b></summary><p>بله؛ ظاهر، محتوا، تصاویر، بخش‌ها و قابلیت‌های سایت قابل توسعه و شخصی‌سازی هستند.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <div class="floating-status"><span></span>VELORA ONLINE</div>
+  <footer class="footer" id="contact">
+    <div class="footer-top"><div><a class="brand" href="#top"><span class="brand-dot"></span>VELORA</a><p>ساخته شده با عشق، کد و کمی دیوانگی ❤️</p></div>
+<div class="socials social-grid" aria-label="شبکه‌های اجتماعی">
+  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.55" cy="6.55" r="1"/></svg>
+  </a>
+  <a href="https://t.me" target="_blank" rel="noopener noreferrer" aria-label="Telegram" title="Telegram">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.2 4.5 18 19.4c-.24 1.05-.86 1.31-1.74.82l-4.78-3.52-2.31 2.23c-.26.26-.48.48-.98.48l.35-4.87 8.87-8.01c.39-.35-.09-.55-.61-.2L6.03 12.98l-4.67-1.46c-1.02-.32-1.04-1.02.21-1.5L19.8 3.43c.87-.32 1.63.2 1.4 1.07Z"/></svg>
+  </a>
+  <a href="https://www.aparat.com" target="_blank" rel="noopener noreferrer" aria-label="Aparat" title="Aparat">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 4.8 18 9.2c2.5 1 3.35 4.05 1.7 6.18l-1.9 2.45a4.5 4.5 0 0 1-5.2 1.3l-7.2-2.75a4.5 4.5 0 0 1-2.55-5.65l1.35-3.85A4.1 4.1 0 0 1 7.2 4.8Z"/><path class="icon-cut" d="m10 8.6 5.5 3.4-5.5 3.4V8.6Z"/></svg>
+  </a>
+  <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7.1a2.9 2.9 0 0 0-2.04-2.05C17.16 4.55 12 4.55 12 4.55s-5.16 0-6.96.5A2.9 2.9 0 0 0 3 7.1 30.2 30.2 0 0 0 2.5 12 30.2 30.2 0 0 0 3 16.9a2.9 2.9 0 0 0 2.04 2.05c1.8.5 6.96.5 6.96.5s5.16 0 6.96-.5A2.9 2.9 0 0 0 21 16.9c.5-1.8.5-4.9.5-4.9s0-3.1-.5-4.9Z"/><path class="icon-cut" d="m10.3 8.5 5.1 3.5-5.1 3.5V8.5Z"/></svg>
+  </a>
+  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5ZM3 9.5h4v11H3v-11Zm6 0h3.8v1.5h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1v5.45h-4v-4.84c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.92H9v-11Z"/></svg>
+  </a>
+  <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8a9.4 9.4 0 0 0-2.97 18.32c.47.09.64-.2.64-.45v-1.58c-2.6.57-3.15-1.1-3.15-1.1-.43-1.08-1.05-1.37-1.05-1.37-.85-.58.07-.57.07-.57.94.07 1.44.97 1.44.97.84 1.44 2.2 1.02 2.74.78.09-.61.33-1.02.6-1.25-2.08-.24-4.27-1.04-4.27-4.62 0-1.02.36-1.86.97-2.52-.1-.24-.42-1.2.09-2.49 0 0 .79-.25 2.58.96a8.9 8.9 0 0 1 4.7 0c1.8-1.21 2.58-.96 2.58-.96.51 1.29.19 2.25.1 2.49.6.66.96 1.5.96 2.52 0 3.59-2.2 4.38-4.29 4.61.34.3.65.87.65 1.75v2.58c0 .25.17.54.65.45A9.4 9.4 0 0 0 12 2.8Z"/></svg>
+  </a>
+</div>
+</div>
+    <div class="footer-bottom"><span>© 2026 VELORA. All rights reserved.</span><span>Designed with curiosity ✦</span><a href="#top">بازگشت به بالا ↑</a></div>
+  </footer>
+  <button class="back-top" aria-label="بازگشت به بالا">↑</button>
+  <script src="script.js" defer></script>
+</body>
+</html>
